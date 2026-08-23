@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — shortlog</title>
+<style>
+/* shortlog のサイト。★ 1枚で完結させる（外部の読み込みを持たない）。
+   審査で開かれる書類なので、こちらの都合で落ちる要素を挟まない。 */
+:root {
+  --bg: #FBF9FF; --surface: #FFFFFF; --ink: #221E2B; --muted: #6B6478;
+  --line: #E6E0F0; --accent: #7C5BC7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17151C; --surface: #201D28; --ink: #EDEAF3; --muted: #A49CB4;
+    --line: #322C3E; --accent: #C7B6EB;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 20px 80px;
+  background: var(--bg); color: var(--ink);
+  font: 16px/1.85 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 680px; margin: 0 auto; }
+header { padding: 48px 0 28px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+.logo img { width: 60px; height: 60px; border-radius: 14px; }
+.logo b { font-size: 22px; letter-spacing: .01em; }
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 6px; }
+h2 { font-size: 18px; margin: 40px 0 10px; padding-top: 4px; }
+h3 { font-size: 15px; margin: 26px 0 6px; color: var(--muted); }
+p, li { color: var(--ink); }
+.lead { color: var(--muted); margin-top: 0; }
+.date { color: var(--muted); font-size: 14px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 14px; padding: 18px 22px; margin: 22px 0;
+}
+.card.strong { border-color: var(--accent); }
+ul { padding-left: 1.25em; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+nav { margin: 28px 0 0; display: flex; gap: 18px; flex-wrap: wrap; }
+footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line);
+         color: var(--muted); font-size: 14px; }
+.en { color: var(--muted); font-size: 14px; }
+.en h2 { font-size: 16px; color: var(--muted); }
+</style>
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="logo" href="index.html">
+    <img src="icon.png" alt="">
+    <b>shortlog</b>
+  </a>
+</header>
+
+<h1>サポート</h1>
+<p class="lead">うまくいかないときは、まずここを見てください。</p>
+
+<h2>よくある質問</h2>
+
+<h3>撮った動画はどこにありますか？</h3>
+<p>「今日」タブに並びます。過去の日は「思い出」タブのカレンダーから開けます。
+写真アプリにも残す設定は、カメラ画面の設定から変えられます。</p>
+
+<h3>1本の動画として書き出したい</h3>
+<p>「今日」タブの書き出しから保存できます。
+出来上がりは、画面で見えているとおりになります。</p>
+
+<h3>間違えて消してしまった</h3>
+<p>削除した動画はゴミ箱に入り、一定期間は元に戻せます。
+「今日」タブのメニューから開いてください。</p>
+
+<h3>顔を隠したい</h3>
+<p>動画を選んで「顔を隠す」から設定できます。
+顔の位置の計算は端末の中だけで行われ、映像は外へ出ません。</p>
+
+<h3>データは同期されますか？</h3>
+<p>いいえ。shortlog はサーバーを持たず、記録は
+<b>その iPhone の中だけ</b>にあります。
+機種を変えるときは、iPhone のバックアップから復元してください。</p>
+
+<h3>アプリを消したらどうなりますか？</h3>
+<p>アプリが保存した動画と設定はすべて消えます。
+残したいものは、先に写真アプリへ保存してください。</p>
+
+<h2>不具合の報告・ご要望</h2>
+<p>下記までご連絡ください。次のことを書いていただけると助かります。</p>
+<ul>
+  <li>iPhone の機種と iOS の版</li>
+  <li>何をしたときに起きたか</li>
+  <li>どうなってほしかったか</li>
+</ul>
+<p><a href="mailto:muscleflip8@gmail.com">muscleflip8@gmail.com</a></p>
+
+<nav>
+  <a href="index.html">トップ</a>
+  <a href="privacy.html">プライバシーポリシー</a>
+</nav>
+
+<footer>shortlog</footer>
+
+</div>
+</body>
+</html>

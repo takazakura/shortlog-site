@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — shortlog</title>
+<style>
+/* shortlog のサイト。★ 1枚で完結させる（外部の読み込みを持たない）。
+   審査で開かれる書類なので、こちらの都合で落ちる要素を挟まない。 */
+:root {
+  --bg: #FBF9FF; --surface: #FFFFFF; --ink: #221E2B; --muted: #6B6478;
+  --line: #E6E0F0; --accent: #7C5BC7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17151C; --surface: #201D28; --ink: #EDEAF3; --muted: #A49CB4;
+    --line: #322C3E; --accent: #C7B6EB;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 20px 80px;
+  background: var(--bg); color: var(--ink);
+  font: 16px/1.85 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 680px; margin: 0 auto; }
+header { padding: 48px 0 28px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+.logo img { width: 60px; height: 60px; border-radius: 14px; }
+.logo b { font-size: 22px; letter-spacing: .01em; }
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 6px; }
+h2 { font-size: 18px; margin: 40px 0 10px; padding-top: 4px; }
+h3 { font-size: 15px; margin: 26px 0 6px; color: var(--muted); }
+p, li { color: var(--ink); }
+.lead { color: var(--muted); margin-top: 0; }
+.date { color: var(--muted); font-size: 14px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 14px; padding: 18px 22px; margin: 22px 0;
+}
+.card.strong { border-color: var(--accent); }
+ul { padding-left: 1.25em; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+nav { margin: 28px 0 0; display: flex; gap: 18px; flex-wrap: wrap; }
+footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line);
+         color: var(--muted); font-size: 14px; }
+.en { color: var(--muted); font-size: 14px; }
+.en h2 { font-size: 16px; color: var(--muted); }
+</style>
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="logo" href="index.html">
+    <img src="icon.png" alt="">
+    <b>shortlog</b>
+  </a>
+</header>
+
+<h1>プライバシーポリシー</h1>
+<p class="date">最終更新日: 2026年8月23日</p>
+
+<div class="card strong">
+  <p><b>shortlog は、あなたの情報を一切集めません。</b></p>
+  <p>撮った動画も、書いた一言も、設定も、すべて<b>あなたのiPhoneの中だけ</b>に
+  保存されます。開発者を含め、誰にも送られません。</p>
+</div>
+
+<h2>1. 送信していないもの</h2>
+<p>shortlog は<b>サーバーを持ちません</b>。アプリはインターネットへ
+何も送信しません。具体的に、以下のいずれも行いません。</p>
+<ul>
+  <li>アカウント登録・ログイン（そもそも仕組みがありません）</li>
+  <li>動画・写真・音声のアップロード</li>
+  <li>利用状況の解析（アクセス解析ツールを組み込んでいません）</li>
+  <li>広告の配信、広告識別子（IDFA）の取得</li>
+  <li>位置情報の取得</li>
+  <li>連絡先・カレンダー・健康情報などへのアクセス</li>
+  <li>第三者への提供・販売</li>
+</ul>
+
+<h2>2. 端末の中に保存されるもの</h2>
+<p>以下はあなたのiPhoneの中にだけ保存されます。</p>
+<ul>
+  <li>撮影・取り込みした動画とその音声</li>
+  <li>動画に付けた時刻・一言・色味などの編集内容</li>
+  <li>読み込んだ音楽、録音したナレーション</li>
+  <li>アプリの設定（撮影時間、書き出し画質など）</li>
+</ul>
+<p>これらは iPhone の標準的なバックアップ（iCloud バックアップ、
+またはパソコンへのバックアップ）の対象になることがあります。
+その取り扱いは Apple のプライバシーポリシーに従います。</p>
+
+<h2>3. 端末の機能の使い方</h2>
+<h3>カメラ</h3>
+<p>動画を撮影するために使います。撮影した映像は端末内に保存されるだけです。</p>
+<h3>マイク</h3>
+<p>動画に音声を入れるため、およびナレーションを録音するために使います。
+設定でオフにできます。オフのあいだはマイクの許可を求めません。</p>
+<h3>写真</h3>
+<p>撮った動画や書き出した1本を、あなたの操作で写真アプリへ保存するために使います。
+<b>写真ライブラリを読み取る権限は求めません。</b>
+動画を取り込むときは iOS の標準の選択画面を使い、
+あなたが選んだ動画だけがアプリへ渡ります。</p>
+
+<h2>4. 顔の検出について</h2>
+<p>顔を隠す機能は、<b>あなたの端末の中だけ</b>で顔の位置を計算します。
+Apple の Vision フレームワークを使い、映像が外部へ送られることはありません。
+顔の特徴を identifying する情報を保存したり、
+人物を識別したりすることもありません。</p>
+
+<h2>5. データの削除</h2>
+<p>アプリ内で動画を削除すると、端末から消えます
+（ゴミ箱に入り、一定期間後に完全に削除されます）。</p>
+<p><b>アプリをアンインストールすると、アプリが保存したすべてのデータが
+削除されます。</b>私たちの手元には何も残りません
+——最初から何も受け取っていないためです。</p>
+
+<h2>6. お子様のプライバシー</h2>
+<p>shortlog は情報を収集しないため、年齢を問わず
+個人情報が集められることはありません。</p>
+
+<h2>7. このポリシーの変更</h2>
+<p>今後、友達と記録を共有する機能などを追加する場合は、
+<b>その機能を公開する前に</b>このポリシーを改定し、
+何が送信されるのかを明記します。
+変更したときは、このページの最終更新日を改めます。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>ご質問は <a href="mailto:muscleflip8@gmail.com">muscleflip8@gmail.com</a> までお寄せください。</p>
+
+<hr style="border:0;border-top:1px solid var(--line);margin:48px 0 32px">
+
+<div class="en">
+<h2>Privacy Policy (English)</h2>
+<p>Last updated: August 23, 2026</p>
+<p><b>shortlog does not collect any of your information.</b>
+The app has no server and no account system, and it does not send
+anything to the internet.</p>
+<p>Videos you record, the text you add, and your settings are stored
+only on your iPhone. We do not use analytics, advertising identifiers,
+or location services, and we do not share any data with third parties.</p>
+<p>The camera and microphone are used solely to record video on your
+device. Photo library access is limited to <i>adding</i> videos you
+explicitly choose to save; we never request permission to read your
+library. Face detection for the blurring feature runs entirely on your
+device using Apple's Vision framework.</p>
+<p>Deleting the app removes all data it stored. We hold nothing,
+because we never received anything.</p>
+<p>If a future version adds features that transmit data (for example,
+sharing with friends), this policy will be updated before that feature
+ships, and it will state exactly what is sent.</p>
+<p>Contact: <a href="mailto:muscleflip8@gmail.com">muscleflip8@gmail.com</a></p>
+</div>
+
+<nav>
+  <a href="index.html">トップ</a>
+  <a href="support.html">サポート</a>
+</nav>
+
+<footer>shortlog</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shortlog — 数秒の毎日</title>
+<style>
+/* shortlog のサイト。★ 1枚で完結させる（外部の読み込みを持たない）。
+   審査で開かれる書類なので、こちらの都合で落ちる要素を挟まない。 */
+:root {
+  --bg: #FBF9FF; --surface: #FFFFFF; --ink: #221E2B; --muted: #6B6478;
+  --line: #E6E0F0; --accent: #7C5BC7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17151C; --surface: #201D28; --ink: #EDEAF3; --muted: #A49CB4;
+    --line: #322C3E; --accent: #C7B6EB;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 20px 80px;
+  background: var(--bg); color: var(--ink);
+  font: 16px/1.85 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 680px; margin: 0 auto; }
+header { padding: 48px 0 28px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+.logo img { width: 60px; height: 60px; border-radius: 14px; }
+.logo b { font-size: 22px; letter-spacing: .01em; }
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 6px; }
+h2 { font-size: 18px; margin: 40px 0 10px; padding-top: 4px; }
+h3 { font-size: 15px; margin: 26px 0 6px; color: var(--muted); }
+p, li { color: var(--ink); }
+.lead { color: var(--muted); margin-top: 0; }
+.date { color: var(--muted); font-size: 14px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 14px; padding: 18px 22px; margin: 22px 0;
+}
+.card.strong { border-color: var(--accent); }
+ul { padding-left: 1.25em; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+nav { margin: 28px 0 0; display: flex; gap: 18px; flex-wrap: wrap; }
+footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line);
+         color: var(--muted); font-size: 14px; }
+.en { color: var(--muted); font-size: 14px; }
+.en h2 { font-size: 16px; color: var(--muted); }
+</style>
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="logo" href="index.html">
+    <img src="icon.png" alt="">
+    <b>shortlog</b>
+  </a>
+</header>
+
+<h1>数秒だけ撮る。それが1年後に効いてくる。</h1>
+<p class="lead">shortlog は、毎日の数秒を撮りためて、
+その日の1本にする iPhone アプリです。</p>
+
+<div class="card">
+  <ul>
+    <li><b>数秒でいい。</b>身構えずに1本撮る</li>
+    <li><b>並べるだけで1本になる。</b>時刻も一言も自動で乗る</li>
+    <li><b>顔を隠せる。</b>計算は端末の中だけ</li>
+    <li><b>どこにも送らない。</b>サーバーもアカウントもありません</li>
+  </ul>
+</div>
+
+<nav>
+  <a href="privacy.html">プライバシーポリシー</a>
+  <a href="support.html">サポート</a>
+</nav>
+
+<footer>shortlog</footer>
+
+</div>
+</body>
+</html>
